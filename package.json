@@ -1,0 +1,21 @@
+{
+  "name": "cucumber-booking",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js"
+  },
+  "keywords": [],
+  "author": "Stanislavs",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chromedriver": "86.0.0",
+    "@cucumber/cucumber": "^7.0.0-rc.0",
+    "selenium-webdriver": "^4.0.0-alpha.7"
+  },
+  "dependencies": {
+    "allure-js-commons": "^2.0.0-beta.8"
+  }
+}
