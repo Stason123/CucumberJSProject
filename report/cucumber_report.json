@@ -4,32 +4,31 @@
     "elements": [
       {
         "description": "",
-        "id": "create-account-on-booking.com;account-creation",
+        "id": "book-first-displayed-hotel-on-booking.com;book-first-displayed-hotel",
         "keyword": "Scenario",
         "line": 2,
-        "name": "Account creation",
+        "name": "Book first displayed hotel",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 3,
-            "name": "I am in Sign Up page",
+            "name": "I have account created",
             "match": {
-              "location": "project\\features\\step_definitions\\account-creating.js:28"
+              "location": "project\\features\\step_definitions\\book-hotel.js:6"
             },
             "result": {
-              "status": "failed",
-              "duration": 8531000000,
-              "error_message": "WebDriverError: element not interactable\n  (Session info: chrome=87.0.4280.66)\n  (Driver info: chromedriver=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}),platform=Windows NT 10.0.18363 x86_64)\n    at Object.checkLegacyResponse (D:\\Stason\\Programing\\CucumberBookingProjectTask\\node_modules\\selenium-webdriver\\lib\\error.js:585:15)\n    at parseHttpResponse (D:\\Stason\\Programing\\CucumberBookingProjectTask\\node_modules\\selenium-webdriver\\lib\\http.js:556:13)\n    at Executor.execute (D:\\Stason\\Programing\\CucumberBookingProjectTask\\node_modules\\selenium-webdriver\\lib\\http.js:491:26)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
+              "status": "pending",
+              "duration": 0
             }
           },
           {
             "arguments": [],
-            "keyword": "When ",
+            "keyword": "And ",
             "line": 4,
-            "name": "I enter valid user email",
+            "name": "I am in \"Home\" page",
             "match": {
-              "location": "project\\features\\step_definitions\\account-creating.js:37"
+              "location": "project\\features\\step_definitions\\book-hotel.js:12"
             },
             "result": {
               "status": "skipped",
@@ -38,11 +37,11 @@
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "When ",
             "line": 5,
-            "name": "first click on \"Get started\" button",
+            "name": "I set up destination as \"Liepaja\"",
             "match": {
-              "location": "project\\features\\step_definitions\\account-creating.js:42"
+              "location": "project\\features\\step_definitions\\book-hotel.js:18"
             },
             "result": {
               "status": "skipped",
@@ -53,9 +52,9 @@
             "arguments": [],
             "keyword": "And ",
             "line": 6,
-            "name": "I enter valid password",
+            "name": "I set dates \"28-01-2020\" - \"31-01-2020\"",
             "match": {
-              "location": "project\\features\\step_definitions\\account-creating.js:48"
+              "location": "project\\features\\step_definitions\\book-hotel.js:24"
             },
             "result": {
               "status": "skipped",
@@ -66,9 +65,9 @@
             "arguments": [],
             "keyword": "And ",
             "line": 7,
-            "name": "click on \"Create account\" button",
+            "name": "I select \"2\" adults and \"1\" children",
             "match": {
-              "location": "project\\features\\step_definitions\\account-creating.js:52"
+              "location": "project\\features\\step_definitions\\book-hotel.js:30"
             },
             "result": {
               "status": "skipped",
@@ -79,9 +78,9 @@
             "arguments": [],
             "keyword": "And ",
             "line": 8,
-            "name": "main page is opened",
+            "name": "I click on \"Search\" button",
             "match": {
-              "location": "project\\features\\step_definitions\\account-creating.js:57"
+              "location": "project\\features\\step_definitions\\book-hotel.js:36"
             },
             "result": {
               "status": "skipped",
@@ -92,9 +91,9 @@
             "arguments": [],
             "keyword": "And ",
             "line": 9,
-            "name": "I click on “My Dashboard” button under account menu",
+            "name": "I click on \"Choose your room\" for fist hotel in the list",
             "match": {
-              "location": "project\\features\\step_definitions\\account-creating.js:61"
+              "location": "project\\features\\step_definitions\\book-hotel.js:43"
             },
             "result": {
               "status": "skipped",
@@ -103,11 +102,11 @@
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 10,
-            "name": "“My Dashboard” page is opened",
+            "name": "\"Hotel Details\" page is opened for selected hotel // verify at least that hotel name, rating is displayed, information in available rooms section matches your previously entered information",
             "match": {
-              "location": "project\\features\\step_definitions\\account-creating.js:65"
+              "location": "project\\features\\step_definitions\\book-hotel.js:50"
             },
             "result": {
               "status": "skipped",
@@ -118,9 +117,71 @@
             "arguments": [],
             "keyword": "And ",
             "line": 11,
-            "name": "correct value is prefilled in email verification placeholder  //based on registered email",
+            "name": "I click on \"Reserve\" button for recommended room",
             "match": {
-              "location": "project\\features\\step_definitions\\account-creating.js:87"
+              "location": "project\\features\\step_definitions\\book-hotel.js:56"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I click on “I'll Reserve” button",
+            "match": {
+              "location": "project\\features\\step_definitions\\book-hotel.js:63"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "\"Checkout\" page is displayed //verify that dates are correct, check if price matches the price in details page, reservation time counter is decreasing, check other information based on previous inputs (amount of adults, etc.)",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I enter valid booking information",
+            "match": {
+              "location": "project\\features\\step_definitions\\book-hotel.js:76"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "And I click on \"Next: Final Details\" button",
+            "match": {
+              "location": "project\\features\\step_definitions\\book-hotel.js:83"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "\"Final Details\" page is displayed",
+            "match": {
+              "location": "project\\features\\step_definitions\\book-hotel.js:88"
             },
             "result": {
               "status": "skipped",
@@ -132,11 +193,11 @@
         "type": "scenario"
       }
     ],
-    "id": "create-account-on-booking.com",
+    "id": "book-first-displayed-hotel-on-booking.com",
     "line": 1,
     "keyword": "Feature",
-    "name": "Create Account on booking.com",
+    "name": "Book first displayed hotel on booking.com",
     "tags": [],
-    "uri": "project\\features\\account-creating.feature"
+    "uri": "project\\features\\book-hotel.feature"
   }
 ]

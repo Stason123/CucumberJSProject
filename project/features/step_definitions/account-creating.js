@@ -1,4 +1,4 @@
-const { Given, When, Then, AfterAll, BeforeAll } = require('@cucumber/cucumber');
+const { Given, When, Then, AfterAll, BeforeAll, Status } = require('@cucumber/cucumber');
 const {  Builder, Capabilities } = require('selenium-webdriver');
 const StaysPage = require('../../pageObjects/StaysPage');
 const RegisterPage = require('../../pageObjects/RegisterPage');
@@ -41,7 +41,7 @@ When('I enter valid user email', async function () {
 
 When('first click on {string} button', async function (searchTerm) {
   console.log('searchTerm', searchTerm);
-  // await registerPage.registerAcceptButtonClick(searchTerm);
+  await registerPage.registerAcceptButtonClick(searchTerm);
 });
 
 
@@ -89,5 +89,17 @@ Then('correct value is prefilled in email verification placeholder  \/\/based on
 });
 
 AfterAll(async function(){
+  // const scenario = scenarioResult.scenario;
+  // console.log('SCENARIO EXECUTION COMPLETED:',scenario.name);
+  // // console.log(Status, scenario.status);
+  // // console.log(scenario);
+  // if (Status.FAILED) {
+  //   var world = this;
+ 
+  //   await driver.takeScreenshot().then(function (buffer) {
+  //     return world.attach(buffer, 'image/png');
+  //   });
+  // }
   await driver.quit();
 });
+
