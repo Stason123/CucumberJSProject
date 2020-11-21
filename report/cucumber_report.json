@@ -1,0 +1,142 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "create-account-on-booking.com;account-creation",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Account creation",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "I am in Sign Up page",
+            "match": {
+              "location": "project\\features\\step_definitions\\account-creating.js:28"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 8531000000,
+              "error_message": "WebDriverError: element not interactable\n  (Session info: chrome=87.0.4280.66)\n  (Driver info: chromedriver=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}),platform=Windows NT 10.0.18363 x86_64)\n    at Object.checkLegacyResponse (D:\\Stason\\Programing\\CucumberBookingProjectTask\\node_modules\\selenium-webdriver\\lib\\error.js:585:15)\n    at parseHttpResponse (D:\\Stason\\Programing\\CucumberBookingProjectTask\\node_modules\\selenium-webdriver\\lib\\http.js:556:13)\n    at Executor.execute (D:\\Stason\\Programing\\CucumberBookingProjectTask\\node_modules\\selenium-webdriver\\lib\\http.js:491:26)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "I enter valid user email",
+            "match": {
+              "location": "project\\features\\step_definitions\\account-creating.js:37"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "first click on \"Get started\" button",
+            "match": {
+              "location": "project\\features\\step_definitions\\account-creating.js:42"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I enter valid password",
+            "match": {
+              "location": "project\\features\\step_definitions\\account-creating.js:48"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "click on \"Create account\" button",
+            "match": {
+              "location": "project\\features\\step_definitions\\account-creating.js:52"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "main page is opened",
+            "match": {
+              "location": "project\\features\\step_definitions\\account-creating.js:57"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I click on “My Dashboard” button under account menu",
+            "match": {
+              "location": "project\\features\\step_definitions\\account-creating.js:61"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "“My Dashboard” page is opened",
+            "match": {
+              "location": "project\\features\\step_definitions\\account-creating.js:65"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "correct value is prefilled in email verification placeholder  //based on registered email",
+            "match": {
+              "location": "project\\features\\step_definitions\\account-creating.js:87"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "create-account-on-booking.com",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Create Account on booking.com",
+    "tags": [],
+    "uri": "project\\features\\account-creating.feature"
+  }
+]

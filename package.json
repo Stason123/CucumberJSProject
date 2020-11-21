@@ -4,18 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js"
+    "test": "cucumber-js ./project/features/ -f json:report/cucumber_report.json"
   },
   "keywords": [],
   "author": "Stanislavs",
   "license": "ISC",
   "devDependencies": {
+    "@cucumber/cucumber": "^7.0.0-rc.0",
     "chai": "^4.2.0",
     "chromedriver": "86.0.0",
-    "@cucumber/cucumber": "^7.0.0-rc.0",
     "selenium-webdriver": "^4.0.0-alpha.7"
   },
   "dependencies": {
-    "allure-js-commons": "^2.0.0-beta.8"
+    "cucumber-html-reporter": "^5.2.0",
+    "cucumberjs-allure-reporter": "^1.0.3",
+    "faker": "^5.1.0"
   }
 }
