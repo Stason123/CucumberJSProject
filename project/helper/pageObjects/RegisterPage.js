@@ -28,11 +28,6 @@ class RegisterPage {
             return true;
           }, function(err) {
               return false;
-            // if (err instanceof webdriver.error.NoSuchElementError) {
-            //     return false;
-            // } else {
-            //     webdriver.promise.rejected(err);
-            // }
           });
         console.log('exist 1', exist);
         if (exist) {

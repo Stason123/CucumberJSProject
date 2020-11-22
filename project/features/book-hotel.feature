@@ -3,7 +3,7 @@ Feature: Book first displayed hotel on booking.com
     Given I have account created
         And I am in "Home" page
     When I set up destination as "Liepaja"
-        And I set dates "28-01-2020" - "31-01-2020"
+        And I set dates "2020-11-28" - "2020-11-30"
         And I select "2" adults and "1" children
         And I click on "Search" button
         And I click on "Choose your room" for fist hotel in the list

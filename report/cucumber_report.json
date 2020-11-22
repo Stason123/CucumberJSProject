@@ -15,11 +15,11 @@
             "line": 3,
             "name": "I have account created",
             "match": {
-              "location": "project\\features\\step_definitions\\book-hotel.js:6"
+              "location": "project\\features\\step_definitions\\book-hotel.js:30"
             },
             "result": {
-              "status": "pending",
-              "duration": 0
+              "status": "passed",
+              "duration": 12340000000
             }
           },
           {
@@ -28,10 +28,10 @@
             "line": 4,
             "name": "I am in \"Home\" page",
             "match": {
-              "location": "project\\features\\step_definitions\\book-hotel.js:12"
+              "location": "project\\features\\step_definitions\\book-hotel.js:45"
             },
             "result": {
-              "status": "skipped",
+              "status": "passed",
               "duration": 0
             }
           },
@@ -41,37 +41,37 @@
             "line": 5,
             "name": "I set up destination as \"Liepaja\"",
             "match": {
-              "location": "project\\features\\step_definitions\\book-hotel.js:18"
+              "location": "project\\features\\step_definitions\\book-hotel.js:50"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 123000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 6,
-            "name": "I set dates \"28-01-2020\" - \"31-01-2020\"",
+            "name": "I set dates \"2020-11-28\" - \"2020-11-30\"",
             "match": {
-              "location": "project\\features\\step_definitions\\book-hotel.js:24"
+              "location": "project\\features\\step_definitions\\book-hotel.js:55"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 204000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 7,
-            "name": "I select \"2\" adults and \"1\" children",
+            "name": "I select \"1\" adults and \"1\" children",
             "match": {
-              "location": "project\\features\\step_definitions\\book-hotel.js:30"
+              "location": "project\\features\\step_definitions\\book-hotel.js:61"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 200000000
             }
           },
           {
@@ -80,10 +80,10 @@
             "line": 8,
             "name": "I click on \"Search\" button",
             "match": {
-              "location": "project\\features\\step_definitions\\book-hotel.js:36"
+              "location": "project\\features\\step_definitions\\book-hotel.js:67"
             },
             "result": {
-              "status": "skipped",
+              "status": "pending",
               "duration": 0
             }
           },
@@ -93,7 +93,7 @@
             "line": 9,
             "name": "I click on \"Choose your room\" for fist hotel in the list",
             "match": {
-              "location": "project\\features\\step_definitions\\book-hotel.js:43"
+              "location": "project\\features\\step_definitions\\book-hotel.js:74"
             },
             "result": {
               "status": "skipped",
@@ -106,7 +106,7 @@
             "line": 10,
             "name": "\"Hotel Details\" page is opened for selected hotel // verify at least that hotel name, rating is displayed, information in available rooms section matches your previously entered information",
             "match": {
-              "location": "project\\features\\step_definitions\\book-hotel.js:50"
+              "location": "project\\features\\step_definitions\\book-hotel.js:81"
             },
             "result": {
               "status": "skipped",
@@ -119,7 +119,7 @@
             "line": 11,
             "name": "I click on \"Reserve\" button for recommended room",
             "match": {
-              "location": "project\\features\\step_definitions\\book-hotel.js:56"
+              "location": "project\\features\\step_definitions\\book-hotel.js:87"
             },
             "result": {
               "status": "skipped",
@@ -132,7 +132,7 @@
             "line": 12,
             "name": "I click on “I'll Reserve” button",
             "match": {
-              "location": "project\\features\\step_definitions\\book-hotel.js:63"
+              "location": "project\\features\\step_definitions\\book-hotel.js:94"
             },
             "result": {
               "status": "skipped",
@@ -155,7 +155,7 @@
             "line": 14,
             "name": "I enter valid booking information",
             "match": {
-              "location": "project\\features\\step_definitions\\book-hotel.js:76"
+              "location": "project\\features\\step_definitions\\book-hotel.js:107"
             },
             "result": {
               "status": "skipped",
@@ -168,7 +168,7 @@
             "line": 15,
             "name": "And I click on \"Next: Final Details\" button",
             "match": {
-              "location": "project\\features\\step_definitions\\book-hotel.js:83"
+              "location": "project\\features\\step_definitions\\book-hotel.js:114"
             },
             "result": {
               "status": "skipped",
@@ -181,7 +181,7 @@
             "line": 16,
             "name": "\"Final Details\" page is displayed",
             "match": {
-              "location": "project\\features\\step_definitions\\book-hotel.js:88"
+              "location": "project\\features\\step_definitions\\book-hotel.js:119"
             },
             "result": {
               "status": "skipped",
