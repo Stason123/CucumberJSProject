@@ -4,6 +4,9 @@ const webdriver = require('selenium-webdriver');
 class StaysPage {
     constructor(driver) {
         this.driver = driver;
+        this.searchButton = {
+            class: 'sb-searchbox__button'
+        }
     }
     
     async choiseCurrency(currency) {
@@ -26,6 +29,12 @@ class StaysPage {
     }
 
     async inputsSearch(search) {
+        await this.driver.findElement(By.id('ss')).then((el) => {
+            el.clear()
+            })
+            .catch(e => {
+              throw e; 
+            });
         await this.driver.findElement(By.id('ss')).sendKeys(search);
     };
 

@@ -6,12 +6,12 @@ Feature: Book first displayed hotel on booking.com
         And I set dates "2020-11-28" - "2020-11-30"
         And I select "2" adults and "1" children
         And I click on "Search" button
-        And I click on "Choose your room" for fist hotel in the list
+        And I click on "See availability" for fist hotel in the list
         And "Hotel Details" page is opened for selected hotel // verify at least that hotel name, rating is displayed, information in available rooms section matches your previously entered information
         And I click on "Reserve" button for recommended room
         And I click on “I'll Reserve” button 
-    Then "Checkout" page is displayed //verify that dates are correct, check if price matches the price in details page, reservation time counter is decreasing, check other information based on previous inputs (amount of adults, etc.)
+    Then "Checkout" page is displayed verify that dates are correct, check if price matches the price in details page, reservation time counter is decreasing, check other information based on previous inputs amount of adults, etc.
         And I enter valid booking information
-        And And I click on "Next: Final Details" button
+        And And I click on "Next: Final details" button
         And "Final Details" page is displayed
 
