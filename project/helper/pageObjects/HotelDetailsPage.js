@@ -20,10 +20,6 @@ class HotelDetailsPage {
             }, function(err) {
                 return false;
             });
-
-        console.log('raiting',  raiting);
-        console.log('hotelName',  hotelName);
-
         await expect(true).to.equal(raiting);
         await expect(true).to.equal(hotelName);
     }
@@ -70,7 +66,6 @@ class HotelDetailsPage {
 
     async getPrice() {
         const price = await this.driver.findElement(By.className("prco-valign-middle-helper")).getText();
-        console.log('price', price);
         return price;
     }
 

@@ -62,21 +62,18 @@ When('I set up destination as {string}', async function (string) {
 });
 
 When('I set dates {string} {float} {string}', async function (date1, float, date2) {
-    console.log(date1, float, date2);
     dateFrom = date1;
     dateTo = date2;
     await staysPage.clickDates(date1, date2);
 });
 
 When('I select {string} adults and {string} children', async function (string, string2) {
-    console.log(string, string2);
     adultsNum = string;
     childNums = string2;
     await staysPage.chooseGuests(string, string2);
 });
 
 When('I click on {string} button',{ timeout: 30000 }, async function (string) {
-    console.log(string);
     await clickButton.clickButtonClassName(staysPage.searchButton.class);
 });
 
@@ -100,7 +97,6 @@ When('I click on {string} button for recommended room', { timeout: 20000 }, asyn
     await clickButton.clickButtonSpan(string);
     price = await hotelDetailsPage.getPrice();
     gueasts = await hotelDetailsPage.getGueastData();
-    console.log('dslsalkjds', price, gueasts);
 });
 
 When('I click on “I\'ll Reserve” button', { timeout: 50000 }, async function () {

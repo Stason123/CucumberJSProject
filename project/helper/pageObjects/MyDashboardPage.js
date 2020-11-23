@@ -11,7 +11,6 @@ class MyDashboardPage {
     
     async checkEmail(person) {
         const emailInput = await this.driver.findElement(By.xpath('//input[@title="Your email address"]')).getAttribute("value");
-        console.log('email', person.Email, emailInput);
         await expect(emailInput).to.equal(person.Email);
         if (person.Email === emailInput) {
             await CreatePerson.saveCsvhistory(person)

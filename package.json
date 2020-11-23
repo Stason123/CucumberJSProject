@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js ./project/features/  -f json:report/cucumber_report.json"
+    "test": "cucumber-js ./project/features/book-hotel.feature  -f json:report/cucumber_report.json"
   },
   "keywords": [],
   "author": "Stanislavs",

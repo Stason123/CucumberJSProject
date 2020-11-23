@@ -12,13 +12,9 @@ class RegisterPage {
           }, function(err) {
             return false;
         });
-        console.log('exist 2', exist);
         if (exist) {
-            console.log('1')
             await this.driver.findElement(By.xpath(`//span[contains(text(), ${buttonText})]`)).click()
         } else {
-            console.log('2')
-
             await this.driver.findElement(By.className("bui-button bui-button--large bui-button--wide")).click();
         }
     }
@@ -29,7 +25,6 @@ class RegisterPage {
           }, function(err) {
               return false;
           });
-        console.log('exist 1', exist);
         if (exist) {
             await this.driver.findElement(By.id("login_name_register")).sendKeys(email)
         } else {

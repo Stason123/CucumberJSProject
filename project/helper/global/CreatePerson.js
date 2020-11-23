@@ -8,7 +8,6 @@ const _historyCsvPath = `./project/helper/global/History.csv`;
 let personInfo;
 
 async function getPatientInfo() {
-    console.log('personInfo', personInfo);
     if (!personInfo) {
         personInfo = new Person();
     } 
@@ -28,7 +27,6 @@ async function readPersonFromCsv() {
         .pipe(csv())
         .on('data', (data) => results.push(data))
         .on('end', () => {
-            console.log('results', results[1]);
             resolve(results[1]);
         });
     });

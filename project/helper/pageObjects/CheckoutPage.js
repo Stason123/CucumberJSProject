@@ -11,11 +11,8 @@ class CheckOutPage {
         const repReg = /[(]+[0-9]* *[\w]* *[\w]*[)]/;
         const p = await this.driver.findElement(By.xpath('//td[@class="topCurrencyClar"]//span//span')).getText();
         let g = await this.driver.findElement(By.css(".bp_sidebar_content_block__li_content")).getText();
-        console.log('p g', p, g);
         g = g.replace(repReg, '');
         guests = guests.replace(repReg, '');
-        console.log(guests, g);
-        // console.log(guests, g[0]);
 
         await expect(p).to.equal(price);
         await expect(g).to.equal(guests);

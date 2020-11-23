@@ -61,7 +61,6 @@ class StaysPage {
         await this.driver.findElement(By.className("xp__input-group xp__guests")).click();
         
         const adults = await this.driver.findElement(By.id("group_adults")).getAttribute("value");
-        console.log('adults', adults);
         
         const children = await this.driver.findElement(By.id("group_children")).getAttribute("value");
         const adNum = parseInt(adult, 10);
@@ -83,7 +82,6 @@ class StaysPage {
             if(children < chNum) {
                 let click = chNum - children;
                 for(let i = 0; i < click; i++) {
-                    console.log(i);
                     await this.driver.findElement(By.xpath(`//button[@aria-label="Increase number of Children"]`)).click();
                 }
             } else {

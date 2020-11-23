@@ -25,7 +25,6 @@ BeforeAll(async function(){
     10000, script: TIMEOUT } )
     console.info( await driver.manage().getTimeouts());
   person = await CreatePerson.getPatientInfo();
-  console.log('person 1', person); 
   staysPage = new StaysPage(driver);
   registerPage = new RegisterPage(driver);
   myDashboard = new MyDashboardPage(driver);
@@ -41,12 +40,10 @@ Given('I am in Sign Up page', { timeout: 30000 }, async function () {
 });
 
 When('I enter valid user email', async function () {
-  console.log(person.Email);
   await registerPage.registerTypeEmail(person.Email); 
 });
 
 When('first click on {string} button', async function (searchTerm) {
-  console.log('searchTerm', searchTerm);
   await registerPage.registerAcceptButtonClick(searchTerm);
 });
 
@@ -56,7 +53,6 @@ When('I enter valid password', async function () {
 });
 
 When('click on {string} button', async function (searchTerm) {
-  console.log('searchTerm', searchTerm);
   await registerPage.registerAcceptButtonClick(searchTerm);
 });
 

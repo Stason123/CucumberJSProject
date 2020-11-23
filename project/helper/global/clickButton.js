@@ -11,7 +11,6 @@ class ClickButton {
     }
 
     async clickButtonClassName(className) {
-        console.log('className', className);
         await this.driver.findElement(By.className(className)).click();
     }
 
